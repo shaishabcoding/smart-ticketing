@@ -39,6 +39,7 @@ for (const seat of seats) {
     } else {
       id("coupon-apply").setAttribute("disabled", "");
     }
+    applyBtn();
   };
 }
 id("coupon-apply").onclick = function () {
@@ -67,3 +68,19 @@ id("apply").onclick = function () {
     id("done").showModal();
   }
 };
+
+id("phone").onchange = () => applyBtn();
+id("phone").oninput = () => applyBtn();
+id("name").oninput = () => applyBtn();
+id("name").onchange = () => applyBtn();
+function applyBtn() {
+  if (
+    selectedSeats.length !== 0 &&
+    id("phone").value.toString().length !== 0 &&
+    id("name").value.toString().length !== 0
+  ) {
+    id("apply").classList.add("bg-[#1DD100]");
+  } else {
+    id("apply").classList.remove("bg-[#1DD100]");
+  }
+}
