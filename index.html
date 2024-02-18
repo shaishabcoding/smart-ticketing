@@ -85,7 +85,10 @@
               the app. The integrated testing features allow for a streamlined .
             </p>
             <!-- todo end -->
-            <a class="btn text-black bg-[#1DD100] w-fit border-none">
+            <a
+              class="btn text-black bg-[#1DD100] w-fit border-none"
+              href="#main"
+            >
               Buy Tickets
             </a>
           </div>
@@ -137,27 +140,31 @@
         >
           <!-- card 1 -->
           <div class="flex flex-row bg-[#FFBF0F] rounded-3xl flex-1">
-            <div class="lg:p-12 p-8 flex flex-col justify-center gap-2">
+            <div class="lg:p-12 p-8 flex flex-col justify-center gap-2 flex-1">
               <h3 class="lg:text-4xl text-2xl font-bold">15% OFF</h3>
               <p class="font-semibold lg:text-lg">on your next purchase</p>
               <p class="text-gray-600">use by January 2024</p>
             </div>
             <img src="images/cupon-devider.png" />
-            <div class="lg:p-12 p-8 flex flex-col justify-center gap-2">
-              <h3 class="lg:text-4xl text-2xl font-bold">NEW15</h3>
+            <div class="lg:p-12 lg:pl-6 p-8 flex flex-col justify-center gap-2">
+              <h3 class="lg:text-3xl text-2xl font-semibold select-all">
+                NEW15
+              </h3>
               <p class="text-gray-600">Coupon Code</p>
             </div>
           </div>
           <!-- card 2 -->
           <div class="flex flex-row bg-[#F78C9C] rounded-3xl flex-1">
-            <div class="lg:p-12 p-8 flex flex-col justify-center gap-2">
+            <div class="lg:p-12 p-8 flex flex-col justify-center gap-2 flex-1">
               <h3 class="lg:text-4xl text-2xl font-bold">20% OFF</h3>
               <p class="font-semibold lg:text-lg">on your next purchase</p>
               <p class="text-gray-600">use by January 2024</p>
             </div>
             <img src="images/cupon-devider.png" />
-            <div class="lg:p-12 p-8 flex flex-col justify-center gap-2">
-              <h3 class="lg:text-4xl text-2xl font-bold">Couple 20</h3>
+            <div class="lg:p-12 lg:pl-6 p-8 flex flex-col justify-center gap-2">
+              <h3 class="lg:text-3xl text-2xl font-semibold select-all">
+                Couple 20
+              </h3>
               <p class="text-gray-600">Coupon Code</p>
             </div>
           </div>
@@ -171,6 +178,7 @@
       <!-- Coupon end -->
       <!-- sale start -->
       <section
+        id="main"
         class="bg-gray-50 border-t-4 border-[#1DD100] lg:p-24 p-4 rounded-t-[100px]"
       >
         <h1 class="lg:text-5xl text-3xl text-center font-semibold">
@@ -217,12 +225,12 @@
                 <button
                   class="btn bg-gray-200 text-gray-600 border border-gray-300"
                 >
-                  Est. Time - 11 Hour
+                  Boarding Point - Laxmipur
                 </button>
                 <button
                   class="btn bg-gray-200 text-gray-600 border border-gray-300"
                 >
-                  Est. Time - 11 Hour
+                  Dropping Point - Bogura
                 </button>
                 <button
                   class="btn bg-gray-200 text-gray-600 border border-gray-300"
@@ -242,6 +250,246 @@
           </div>
         </div>
         <!-- info end -->
+        <!-- seat start -->
+        <div
+          class="mt-8 bg-white rounded-2xl p-12 flex divide-x-2 divide-dashed gap-4"
+        >
+          <div class="flex-1">
+            <h3 class="text-3xl font-bold">Select Your Seat</h3>
+            <div
+              class="flex justify-between items-center border-dashed border-t-2 border-b-2 border-gray-300 my-8 py-4"
+            >
+              <span
+                class="flex items-center gap-2 text-2xl font-medium text-gray-600"
+                ><img src="images/seat-gray.png" class="h-[1.25em]" />
+                Available</span
+              >
+              <span
+                class="flex items-center gap-2 text-2xl font-medium text-[#1DD100]"
+                ><img src="images/seat-green-filled.png" class="h-[1.25em]" />
+                Selected</span
+              >
+            </div>
+            <div class="flex justify-end items-center">
+              <button class="btn px-10">
+                <img src="images/wheel.png" />
+              </button>
+            </div>
+            <div class="my-4 text-xl flex flex-col gap-4 flex-wrap">
+              <div class="flex items-center gap-4">
+                <div class="w-6 flex items-center justify-center">A</div>
+                <div class="flex justify-between flex-1">
+                  <div class="flex gap-4 mr-4">
+                    <button class="btn px-12">A1</button>
+                    <button class="btn px-12">A2</button>
+                  </div>
+                  <div class="flex gap-4">
+                    <button class="btn px-12">A3</button>
+                    <button class="btn px-12">A4</button>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="w-6 flex items-center justify-center">B</div>
+                <div class="flex justify-between flex-1">
+                  <div class="flex gap-4">
+                    <button class="btn px-12">B1</button>
+                    <button class="btn px-12">B2</button>
+                  </div>
+                  <div class="flex gap-4">
+                    <button class="btn px-12">B3</button>
+                    <button class="btn px-12">B4</button>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="w-6 flex items-center justify-center">C</div>
+                <div class="flex justify-between flex-1">
+                  <div class="flex gap-4">
+                    <button class="btn px-12">C1</button>
+                    <button class="btn px-12">C2</button>
+                  </div>
+                  <div class="flex gap-4">
+                    <button class="btn px-12">C3</button>
+                    <button class="btn px-12">C4</button>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="w-6 flex items-center justify-center">D</div>
+                <div class="flex justify-between flex-1">
+                  <div class="flex gap-4">
+                    <button class="btn px-12">D1</button>
+                    <button class="btn px-12">D2</button>
+                  </div>
+                  <div class="flex gap-4">
+                    <button class="btn px-12">D3</button>
+                    <button class="btn px-12">D4</button>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="w-6 flex items-center justify-center">E</div>
+                <div class="flex justify-between flex-1">
+                  <div class="flex gap-4">
+                    <button class="btn px-12">E1</button>
+                    <button class="btn px-12">E2</button>
+                  </div>
+                  <div class="flex gap-4">
+                    <button class="btn px-12">E3</button>
+                    <button class="btn px-12">E4</button>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="w-6 flex items-center justify-center">F</div>
+                <div class="flex justify-between flex-1">
+                  <div class="flex gap-4">
+                    <button class="btn px-12">F1</button>
+                    <button class="btn px-12">F2</button>
+                  </div>
+                  <div class="flex gap-4">
+                    <button class="btn px-12">F3</button>
+                    <button class="btn px-12">F4</button>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="w-6 flex items-center justify-center">G</div>
+                <div class="flex justify-between flex-1">
+                  <div class="flex gap-4">
+                    <button class="btn px-12">G1</button>
+                    <button class="btn px-12">G2</button>
+                  </div>
+                  <div class="flex gap-4">
+                    <button class="btn px-12">G3</button>
+                    <button class="btn px-12">G4</button>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="w-6 flex items-center justify-center">H</div>
+                <div class="flex justify-between flex-1">
+                  <div class="flex gap-4">
+                    <button class="btn px-12">H1</button>
+                    <button class="btn px-12">H2</button>
+                  </div>
+                  <div class="flex gap-4">
+                    <button class="btn px-12">H3</button>
+                    <button class="btn px-12">H4</button>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="w-6 flex items-center justify-center">I</div>
+                <div class="flex justify-between flex-1">
+                  <div class="flex gap-4">
+                    <button class="btn px-12">I1</button>
+                    <button class="btn px-12">I2</button>
+                  </div>
+                  <div class="flex gap-4">
+                    <button class="btn px-12">I3</button>
+                    <button class="btn px-12">I4</button>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="w-6 flex items-center justify-center">J</div>
+                <div class="flex justify-between flex-1">
+                  <div class="flex gap-4">
+                    <button class="btn px-12">J1</button>
+                    <button class="btn px-12">J2</button>
+                  </div>
+                  <div class="flex gap-4">
+                    <button class="btn px-12">J3</button>
+                    <button class="btn px-12">J4</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pl-4 flex-1">
+            <h3 class="text-3xl font-bold border-b-2 border-dashed w-full pb-4">
+              Select Your Seat
+            </h3>
+            <div class="bg-gray-50 p-6 mt-6 rounded-3xl">
+              <div
+                class="flex justify-between border-b-2 border-dashed text-lg font-semibold pb-2 border-gray-300 mb-2"
+              >
+                <span>Seat 2</span>
+                <span>Class</span>
+                <span>Price</span>
+              </div>
+              <div>
+                <div class="flex justify-between border-gray-300 text-gray-700">
+                  <span>C2</span>
+                  <span>Economoy</span>
+                  <span>550</span>
+                </div>
+                <div class="flex justify-between border-gray-300 text-gray-700">
+                  <span>C2</span>
+                  <span>Economoy</span>
+                  <span>550</span>
+                </div>
+                <div class="flex justify-between border-gray-300 text-gray-700">
+                  <span>C2</span>
+                  <span>Economoy</span>
+                  <span>550</span>
+                </div>
+              </div>
+              <div class="flex justify-between mt-2 pt-1 border-t-2">
+                <h4 class="font-bold">Total Price</h4>
+                <h4 class="font-bold">BDT 1100</h4>
+              </div>
+              <label
+                class="p-2 bg-white flex justify-between items-center rounded-2xl mt-4"
+                for="coupon"
+              >
+                <input
+                  type="text"
+                  id="coupon"
+                  placeholder="Have any Coupon?"
+                  class="border-none outline-none flex-1 px-2"
+                />
+                <button class="btn bg-[#1DD100] text-white">Apply</button>
+              </label>
+              <div class="flex justify-between mt-2 pt-1">
+                <h4 class="font-bold">Grand Total</h4>
+                <h4 class="font-bold">BDT 1100</h4>
+              </div>
+              <h3 class="text-lg font-bold my-4">
+                Passenger Name <span class="text-red-500">*</span>
+              </h3>
+              <input
+                type="text"
+                class="py-4 px-6 rounded-lg block w-full border border-gray-300"
+                placeholder="Enter your name"
+              />
+              <h3 class="text-lg font-bold my-4">
+                Phone Number <span class="text-red-500">*</span>
+              </h3>
+              <input
+                type="text"
+                class="py-4 px-6 rounded-lg block w-full border border-gray-300"
+                placeholder="Enter your phone number"
+              />
+              <h3 class="text-lg font-bold my-4">Email ID</h3>
+              <input
+                type="text"
+                class="py-4 px-6 rounded-lg block w-full border border-gray-300"
+                placeholder="Enter your email id"
+              />
+              <button class="btn bg-[#1DD100] text-white w-full my-4">
+                Apply
+              </button>
+              <div class="flex justify-center gap-4">
+                <a href="#" class="link">Terms and Conditions</a>
+                <a href="#" class="link">Cancellation Policy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- seat end -->
       </section>
       <!-- sale end -->
     </main>
