@@ -34,6 +34,7 @@ for (const seat of seats) {
     total_price = seatsCount * SEAT_PRICE;
     id("total-price").innerHTML = total_price;
     id("grand-total").innerHTML = total_price;
+    id("discount").innerHTML = 0;
     if (seatsCount === 4) {
       id("coupon-apply").removeAttribute("disabled");
     } else {
