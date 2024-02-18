@@ -9,6 +9,7 @@ const coupons = {
 for (const seat of seats) {
   let seatName = seat.innerHTML;
   seat.id = seatName;
+  seat.style.width = id("wheel").offsetWidth + "px";
   seat.onclick = function () {
     if (selectedSeats.includes(seatName)) {
       seat.classList.remove("bg-[#1DD100]");
@@ -43,11 +44,13 @@ for (const seat of seats) {
 id("coupon-apply").onclick = function () {
   for (const coupon in coupons) {
     if (coupon === id("coupon").value) {
-      id("grand-total").innerHTML = parseInt(
-        total_price - (coupons[coupon] * total_price) / 100
-      );
+      const discount = (coupons[coupon] * total_price) / 100;
+      id("discount").innerHTML = discount;
+      id("grand-total").innerHTML = parseInt(total_price - discount);
+      return;
     }
   }
+  alert("invalid coupon");
 };
 
 id("apply").onclick = function () {
