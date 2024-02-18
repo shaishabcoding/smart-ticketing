@@ -48,6 +48,7 @@ id("coupon-apply").onclick = function () {
       const discount = (coupons[coupon] * total_price) / 100;
       id("discount").innerHTML = discount;
       id("grand-total").innerHTML = parseInt(total_price - discount);
+      id("coupon-apply").parentElement.classList.add("hidden");
       return;
     }
   }
