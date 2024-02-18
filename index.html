@@ -13,8 +13,22 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- daisyUI end  -->
+
+    <!-- fonts start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fonts end -->
+    <style>
+      p {
+        font-family: Inter;
+      }
+    </style>
   </head>
-  <body class="lg:pt-8">
+  <body class="lg:pt-8 font-[Raleway]">
     <!-- model start-->
     <dialog id="done" class="modal">
       <div class="modal-box flex flex-col justify-center items-center p-12">
@@ -101,12 +115,9 @@
                 >S Paribahan</span
               >
             </h2>
-            <!-- todo start -->
             <p class="text-white lg:w-3/4">
-              Yes, you can run unit tests and view the results directly within
-              the app. The integrated testing features allow for a streamlined .
+              A one-stop solution for your travel needs
             </p>
-            <!-- todo end -->
             <a
               class="btn text-black bg-[#1DD100] w-fit border-none"
               href="#main"
@@ -277,10 +288,10 @@
         <!-- info end -->
         <!-- seat start -->
         <div
-          class="mt-8 bg-white rounded-2xl p-12 flex flex-col lg:flex-row space-y-4 lg:divide-x-2 divide-dashed gap-4"
+          class="mt-8 bg-white rounded-2xl p-12 flex flex-col lg:flex-row space-y-4 lg:divide-x-2 divide-dashed gap-4 font-[Inter]"
         >
           <div class="flex-1">
-            <h3 class="text-3xl font-bold">Select Your Seat</h3>
+            <h3 class="text-3xl font-bold font-[Raleway]">Select Your Seat</h3>
             <div
               class="flex justify-between items-center border-dashed border-t-2 border-b-2 border-gray-300 my-8 py-4"
             >
@@ -434,7 +445,9 @@
             </div>
           </div>
           <div class="pl-4 flex-1">
-            <h3 class="text-3xl font-bold border-b-2 border-dashed w-full pb-4">
+            <h3
+              class="text-3xl font-bold border-b-2 border-dashed w-full pb-4 font-[Raleway]"
+            >
               Select Your Seat
             </h3>
             <div class="bg-gray-50 p-6 mt-6 rounded-3xl">
